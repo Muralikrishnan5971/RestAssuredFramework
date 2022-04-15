@@ -2,15 +2,22 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4187" started-at="2022-04-15T12:21:41Z" finished-at="2022-04-15T12:21:45Z">
+  <suite name="Default suite" duration-ms="3241" started-at="2022-04-15T16:04:34Z" finished-at="2022-04-15T16:04:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4187" started-at="2022-04-15T12:21:41Z" finished-at="2022-04-15T12:21:45Z">
+    <test name="Default test" duration-ms="3241" started-at="2022-04-15T16:04:34Z" finished-at="2022-04-15T16:04:38Z">
       <class name="com.mk.tests.PostTest">
-        <test-method status="PASS" signature="postNewEmployee()[pri:0, instance:com.mk.tests.PostTest@75bd9247]" name="postNewEmployee" duration-ms="4169" started-at="2022-04-15T17:51:41Z" finished-at="2022-04-15T17:51:45Z">
+        <test-method status="PASS" signature="postNewEmployeeUsingExternalFile(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.PostTest@75bd9247]" name="postNewEmployeeUsingExternalFile" duration-ms="3219" started-at="2022-04-15T21:34:34Z" finished-at="2022-04-15T21:34:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.PostTest.postNewEmployeeUsingExternalFile(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postNewEmployee -->
+        </test-method> <!-- postNewEmployeeUsingExternalFile -->
       </class> <!-- com.mk.tests.PostTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

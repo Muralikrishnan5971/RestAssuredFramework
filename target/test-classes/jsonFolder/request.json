@@ -1,0 +1,28 @@
+{
+	"id": 1,
+	"firstname": "fname",
+	"lastname": "Jolie",
+	"email": "iluvaj@gmail.com",
+	"favfoods": {
+		"breakFast": "Idly",
+		"lunch": "Briyani",
+		"dinner": [
+			"pulka",
+			"milk"
+		]
+	},
+	"jobs": [
+		"manual qa",
+		"automation tester"
+	],
+	"marks": [
+		{
+			"tamil": 47,
+			"english": 54
+		},
+		{
+			"tamil": 69,
+			"english": 85
+		}
+	]
+}
