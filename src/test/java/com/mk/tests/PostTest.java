@@ -7,15 +7,13 @@ import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.markuputils.CodeLanguage;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.mk.ApiRequestBuilder.RequestBuilder;
 import com.mk.Constants.FCwithSingleton;
 import com.mk.Constants.FrameworkConstants;
 import com.mk.Pojos.Employee;
 import com.mk.Pojos.FavFoods;
 import com.mk.Pojos.Marks;
-import com.mk.Reports.ReportManager;
+import com.mk.Reports.ExtentLogger;
 import com.mk.RequestUtils.ApiUtils;
 import com.mk.RequestUtils.RandomUtils;
 
@@ -61,7 +59,7 @@ public class PostTest extends BaseTest {
 
 		response.prettyPrint();
 
-		ReportManager.getTest().pass(MarkupHelper.createCodeBlock(response.prettyPrint(), CodeLanguage.JSON));
+		ExtentLogger.pass(response.prettyPrint());
 
 		// ASSERTION
 
@@ -87,7 +85,7 @@ public class PostTest extends BaseTest {
 
 		response.prettyPrint();
 
-		ReportManager.getTest().pass(MarkupHelper.createCodeBlock(response.prettyPrint(), CodeLanguage.JSON));
+		ExtentLogger.pass(response.prettyPrint());
 
 		// writing the respone in an external json file
 		ApiUtils.storeResponseAsJsonFile(

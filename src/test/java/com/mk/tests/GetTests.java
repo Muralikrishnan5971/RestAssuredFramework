@@ -9,10 +9,8 @@ import java.util.Map;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.markuputils.CodeLanguage;
-import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.mk.ApiRequestBuilder.RequestBuilder;
-import com.mk.Reports.ReportManager;
+import com.mk.Reports.ExtentLogger;
 
 import io.restassured.response.Response;
 
@@ -25,8 +23,8 @@ public class GetTests extends BaseTest {
 
 		response.prettyPrint();
 		
-		ReportManager.getTest().pass(MarkupHelper.createCodeBlock(response.prettyPrint(), CodeLanguage.JSON));
-
+		ExtentLogger.pass(response.prettyPrint());
+		
 		assertThat(response.getStatusCode()).isEqualTo(200);
 
 		// $ indicated the root node
@@ -43,7 +41,7 @@ public class GetTests extends BaseTest {
 
 		response.prettyPrint();
 		
-		ReportManager.getTest().pass(MarkupHelper.createCodeBlock(response.prettyPrint(), CodeLanguage.JSON));
+		ExtentLogger.pass(response.prettyPrint());
 
 		assertThat(response.jsonPath().getString("firstname")).isEqualTo(data.get("firstname").toLowerCase());
 	}

@@ -10,12 +10,14 @@ public final class ReportManager {
 
 	private static ThreadLocal<ExtentTest> exTest = new ThreadLocal<>();
 
-	public static ExtentTest getTest() {
+	// default access modifier to restrict access outside the package
+	
+	static ExtentTest getTest() {
 
 		return exTest.get();
 	}
 
-	public static void setTest(ExtentTest test) {
+	static void setTest(ExtentTest test) {
 
 		exTest.set(test);
 	}
