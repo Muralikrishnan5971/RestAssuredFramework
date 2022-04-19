@@ -1,9 +1,8 @@
 package com.mk.Reports;
 
 import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-
-import io.restassured.response.Response;
 
 public final class ExtentLogger {
 
@@ -21,7 +20,7 @@ public final class ExtentLogger {
 
 	public static void fail(String message) {
 
-		ReportManager.getTest().fail(message);
+		ReportManager.getTest().fail(MarkupHelper.createLabel(message, ExtentColor.RED));
 	}
 
 	public static void info(String message) {

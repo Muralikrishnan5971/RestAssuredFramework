@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [MyTestSuite]">
+  <listeners>
+    <listener class-name="com.mk.Listeners.TestListener"/>
+  </listeners>
   <test thread-count="3" name="Test" parallel="methods">
     <classes>
       <class name="com.mk.tests.PostTest"/>
@@ -9,13 +12,6 @@
   </test> <!-- Test -->
   <test name="Test(failed)" parallel="methods">
     <classes>
-      <class name="com.mk.tests.GetTests">
-        <methods>
-          <include name="getSingleEmployeeDetail" invocation-numbers="0 1 2"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethodITest"/>
-        </methods>
-      </class> <!-- com.mk.tests.GetTests -->
       <class name="com.mk.tests.PostTest">
         <methods>
           <include name="setUpSuite"/>
@@ -24,6 +20,13 @@
           <include name="tearDownMethodITest"/>
         </methods>
       </class> <!-- com.mk.tests.PostTest -->
+      <class name="com.mk.tests.GetTests">
+        <methods>
+          <include name="getSingleEmployeeDetail" invocation-numbers="0 1 2"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethodITest"/>
+        </methods>
+      </class> <!-- com.mk.tests.GetTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

@@ -9,6 +9,7 @@ import java.util.Map;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.mk.Annotations.FrameworkAnnotations;
 import com.mk.ApiRequestBuilder.RequestBuilder;
 import com.mk.Reports.ExtentLogger;
 
@@ -17,6 +18,7 @@ import io.restassured.response.Response;
 public class GetTests extends BaseTest {
 
 	@Test(enabled = true)
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke"})
 	public void getEmployeeDetails() {
 
 		Response response = RequestBuilder.buildGetRequest().get("/employees");
@@ -69,5 +71,19 @@ public class GetTests extends BaseTest {
 
 		return data;
 
+	}
+	
+	@Test(enabled = false)
+	public void getEmployeeTest(){
+		
+		Response response = RequestBuilder.buildGetRequest().get("/employees");
+
+		response.prettyPrint();
+		
+		ExtentLogger.pass(response.prettyPrint());
+		
+		System.out.println(response.toString().length());
+		
+		assertThat(response.getStatusCode()).isEqualTo(200);
 	}
 }
