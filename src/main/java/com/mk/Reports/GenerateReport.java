@@ -35,4 +35,22 @@ public final class GenerateReport {
 		ReportManager.setTest(test);
 	}
 
+	public static void addAuthor(String[] authors) {
+
+		for (String author : authors) {
+
+			ReportManager.getTest().assignAuthor(author);
+
+		}
+	}
+
+	public static void addCategory(String[] categories) {
+
+		for (String category : categories) {
+
+			ReportManager.getTest().assignAuthor(category);
+
+		}
+	}
+
 }

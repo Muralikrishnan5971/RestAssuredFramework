@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 @Target(METHOD) //--> basically indicates where we can add @Test
 public @interface FrameworkAnnotations {
 
-	String author() default "Test Automation Engineer";
+	String[] author() default "Test Automation Engineer";
 	
 	String[] category() default "smoke";
 }

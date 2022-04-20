@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 19, 2022 10:51:51 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 21, 2022 12:39:57 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,22 +72,207 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">getcall</a><a class="dropdown-item" href="#">Assignment</a><a class="dropdown-item" href="#">regression</a><a class="dropdown-item" href="#">getcall</a><a class="dropdown-item" href="#">Muralikrishnan</a><a class="dropdown-item" href="#">Muralikrishnan</a><a class="dropdown-item" href="#">Muralikrishnan</a><a class="dropdown-item" href="#">smoke</a><a class="dropdown-item" href="#">postcall</a><a class="dropdown-item" href="#">Muralikrishnan</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="4"
+          author="regression postcall Muralikrishnan smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">postNewEmployee</p>
+            <p class="text-sm">
+              <span>00:39:57 AM</span> / <span>00:00:04:765</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">postNewEmployee</h5>
+<span class='badge badge-success'>04.21.2022 00:39:57</span>
+<span class='badge badge-danger'>04.21.2022 00:40:02</span>
+<span class='badge badge-default'>00:00:04:765</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">postcall</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:39:59</td>
+        <td>
+          Request Details Below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:40:00</td>
+        <td>
+           <div class='json-tree' id='code-block-json-0'></div>
+ <script>
+  function jsonTreeCreate0() { 
+   document.getElementById('code-block-json-0').innerHTML = JSONTree.create({"id":1063,"firstname":"detra","lastname":"wolff","email":"Warhol@gmail.com","favfoods":{"breakFast":"Idly","lunch":"Briyani","dinner":["pulka","milk"]},"jobs":["manual qa","automation tester"],"marks":[{"tamil":47,"english":54},{"tamil":69,"english":85}]}); 
+  }
+  jsonTreeCreate0();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:40:00</td>
+        <td>
+          Content-Type:application/json
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:00</td>
+        <td>
+          {
+    "id": 1063,
+    "firstname": "detra",
+    "lastname": "wolff",
+    "email": "Warhol@gmail.com",
+    "favfoods": {
+        "breakFast": "Idly",
+        "lunch": "Briyani",
+        "dinner": [
+            "pulka",
+            "milk"
+        ]
+    },
+    "jobs": [
+        "manual qa",
+        "automation tester"
+    ],
+    "marks": [
+        {
+            "tamil": 47,
+            "english": 54
+        },
+        {
+            "tamil": 69,
+            "english": 85
+        }
+    ]
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:02</td>
+        <td>
+          postNewEmployee is PASSED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
         <li class="test-item"  status="pass" test-id="1"
-          author=""
+          author="getcall regression Muralikrishnan smoke"
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">getSingleEmployeeDetail</p>
+            <p class="text-sm">
+              <span>00:39:57 AM</span> / <span>00:00:04:991</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">getSingleEmployeeDetail</h5>
+<span class='badge badge-success'>04.21.2022 00:39:57</span>
+<span class='badge badge-danger'>04.21.2022 00:40:02</span>
+<span class='badge badge-default'>00:00:04:991</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">getcall</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:00</td>
+        <td>
+          {
+    "id": 242,
+    "firstname": "bambi",
+    "lastname": "Jolie",
+    "email": "iluvaj@gmail.com",
+    "favfoods": {
+        "breakFast": "Idly",
+        "lunch": "Briyani",
+        "dinner": [
+            "pulka",
+            "milk"
+        ]
+    },
+    "jobs": [
+        "manual qa",
+        "automation tester"
+    ],
+    "marks": [
+        {
+            "tamil": 47,
+            "english": 54
+        },
+        {
+            "tamil": 69,
+            "english": 85
+        }
+    ]
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:02</td>
+        <td>
+          getSingleEmployeeDetail is PASSED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="getcall regression Muralikrishnan smoke"
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">getEmployeeDetails</p>
             <p class="text-sm">
-              <span>22:51:52 PM</span> / <span>00:00:04:838</span>
+              <span>00:39:57 AM</span> / <span>00:00:04:111</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -91,11 +281,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">getEmployeeDetails</h5>
-<span class='badge badge-success'>04.19.2022 22:51:52</span>
-<span class='badge badge-danger'>04.19.2022 22:51:57</span>
-<span class='badge badge-default'>00:00:04:838</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>04.21.2022 00:39:57</span>
+<span class='badge badge-danger'>04.21.2022 00:40:01</span>
+<span class='badge badge-default'>00:00:04:111</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">getcall</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -103,7 +297,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:56</td>
+        <td>00:40:01</td>
         <td>
           [
     {
@@ -2376,13 +2570,265 @@
                 "english": 85
             }
         ]
+    },
+    {
+        "id": 1042,
+        "firstname": "giovanni",
+        "lastname": "Jolie",
+        "email": "iluvaj@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1420,
+        "firstname": "jamey",
+        "lastname": "schulist",
+        "email": "Vettriano@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1123,
+        "firstname": "milford",
+        "lastname": "konopelski",
+        "email": "Caravaggio@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1417,
+        "firstname": "carlos",
+        "lastname": "ortiz",
+        "email": "Vettriano@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1133,
+        "firstname": "dale",
+        "lastname": "mraz",
+        "email": "Rothko@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1108,
+        "firstname": "michel",
+        "lastname": "carter",
+        "email": "Dali@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1229,
+        "firstname": "audria",
+        "lastname": "wintheiser",
+        "email": "Munch@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1217,
+        "firstname": "debroah",
+        "lastname": "swift",
+        "email": "Seurat@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
+    },
+    {
+        "id": 1063,
+        "firstname": "detra",
+        "lastname": "wolff",
+        "email": "Warhol@gmail.com",
+        "favfoods": {
+            "breakFast": "Idly",
+            "lunch": "Briyani",
+            "dinner": [
+                "pulka",
+                "milk"
+            ]
+        },
+        "jobs": [
+            "manual qa",
+            "automation tester"
+        ],
+        "marks": [
+            {
+                "tamil": 47,
+                "english": 54
+            },
+            {
+                "tamil": 69,
+                "english": 85
+            }
+        ]
     }
 ]
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:57</td>
+        <td>00:40:01</td>
         <td>
           getEmployeeDetails is PASSED
         </td>
@@ -2392,14 +2838,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
+        <li class="test-item"  status="pass" test-id="2"
+          author="Assignment Muralikrishnan"
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">postNewEmployee</p>
+            <p class="name">assignmentTestCall</p>
             <p class="text-sm">
-              <span>22:51:52 PM</span> / <span>00:00:05:409</span>
+              <span>00:39:57 AM</span> / <span>00:00:04:405</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2407,56 +2853,52 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">postNewEmployee</h5>
-<span class='badge badge-success'>04.19.2022 22:51:52</span>
-<span class='badge badge-danger'>04.19.2022 22:51:57</span>
-<span class='badge badge-default'>00:00:05:409</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-pass">assignmentTestCall</h5>
+<span class='badge badge-success'>04.21.2022 00:39:57</span>
+<span class='badge badge-danger'>04.21.2022 00:40:02</span>
+<span class='badge badge-default'>00:00:04:405</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Assignment</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:56</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:40:01</td>
         <td>
-          {
-    "id": 1020,
-    "firstname": "dewey",
-    "lastname": "homenick",
-    "email": "Manet@gmail.com",
-    "favfoods": {
-        "breakFast": "Idly",
-        "lunch": "Briyani",
-        "dinner": [
-            "pulka",
-            "milk"
-        ]
-    },
-    "jobs": [
-        "manual qa",
-        "automation tester"
-    ],
-    "marks": [
-        {
-            "tamil": 47,
-            "english": 54
-        },
-        {
-            "tamil": 69,
-            "english": 85
-        }
-    ]
-}
+          Request Details Below
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:40:01</td>
+        <td>
+           <div class='json-tree' id='code-block-json-1'></div>
+ <script>
+  function jsonTreeCreate1() { 
+   document.getElementById('code-block-json-1').innerHTML = JSONTree.create({"id":1394,"firstname":"lee","lastname":"hayes","email":null,"favfoods":null,"jobs":null,"marks":null}); 
+  }
+  jsonTreeCreate1();
+ </script>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>00:40:01</td>
+        <td>
+          Content-Type:application/json
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:57</td>
+        <td>00:40:02</td>
         <td>
-          postNewEmployee is PASSED
+          assignmentTestCall is PASSED
         </td>
       </tr>
   </tbody>
@@ -2464,14 +2906,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
+        <li class="test-item"  status="pass" test-id="5"
+          author="getcall regression Muralikrishnan smoke"
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">postNewEmployeeUsingExternalFile</p>
+            <p class="name">getSingleEmployeeDetail</p>
             <p class="text-sm">
-              <span>22:51:52 PM</span> / <span>00:00:04:076</span>
+              <span>00:40:02 AM</span> / <span>00:00:00:058</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -2479,12 +2921,16 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">postNewEmployeeUsingExternalFile</h5>
-<span class='badge badge-success'>04.19.2022 22:51:52</span>
-<span class='badge badge-danger'>04.19.2022 22:51:56</span>
-<span class='badge badge-default'>00:00:04:076</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<h5 class="test-status text-pass">getSingleEmployeeDetail</h5>
+<span class='badge badge-success'>04.21.2022 00:40:02</span>
+<span class='badge badge-danger'>04.21.2022 00:40:02</span>
+<span class='badge badge-default'>00:00:00:058</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">getcall</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
@@ -2492,11 +2938,11 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:56</td>
+        <td>00:40:02</td>
         <td>
           {
-    "id": 1198,
-    "firstname": "kimberely",
+    "id": 751,
+    "firstname": "miki",
     "lastname": "Jolie",
     "email": "iluvaj@gmail.com",
     "favfoods": {
@@ -2526,9 +2972,9 @@
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>22:51:56</td>
+        <td>00:40:02</td>
         <td>
-          postNewEmployeeUsingExternalFile is PASSED
+          getSingleEmployeeDetail is PASSED
         </td>
       </tr>
   </tbody>
@@ -2536,113 +2982,75 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
-          author=""
+        <li class="test-item"  status="pass" test-id="6"
+          author="getcall regression Muralikrishnan smoke"
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">getSingleEmployeeDetail</p>
             <p class="text-sm">
-              <span>22:51:56 PM</span> / <span>00:00:04:289</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>00:40:02 AM</span> / <span>00:00:00:063</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">getSingleEmployeeDetail</h5>
-<span class='badge badge-success'>04.19.2022 22:51:56</span>
-<span class='badge badge-danger'>04.19.2022 22:52:00</span>
-<span class='badge badge-default'>00:00:04:289</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:52:00</td>
-        <td>
-          <span class='badge white-text red'>java.net.ConnectException: Connection refused: connect</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">getSingleEmployeeDetail</p>
-            <p class="text-sm">
-              <span>22:52:00 PM</span> / <span>00:00:04:123</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">getSingleEmployeeDetail</h5>
-<span class='badge badge-success'>04.19.2022 22:52:00</span>
-<span class='badge badge-danger'>04.19.2022 22:52:04</span>
-<span class='badge badge-default'>00:00:04:123</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:52:04</td>
-        <td>
-          <span class='badge white-text red'>java.net.ConnectException: Connection refused: connect</span>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">getSingleEmployeeDetail</p>
-            <p class="text-sm">
-              <span>22:52:04 PM</span> / <span>00:00:04:113</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">getSingleEmployeeDetail</h5>
-<span class='badge badge-success'>04.19.2022 22:52:04</span>
-<span class='badge badge-danger'>04.19.2022 22:52:09</span>
-<span class='badge badge-default'>00:00:04:113</span>
+<h5 class="test-status text-pass">getSingleEmployeeDetail</h5>
+<span class='badge badge-success'>04.21.2022 00:40:02</span>
+<span class='badge badge-danger'>04.21.2022 00:40:02</span>
+<span class='badge badge-default'>00:00:00:063</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 </div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">getcall</span>
+<span class="badge badge-pill badge-default">regression</span>
+<span class="badge badge-pill badge-default">Muralikrishnan</span>
+<span class="badge badge-pill badge-default">smoke</span></div>
 </div>
 </div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>22:52:09</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:02</td>
         <td>
-          <span class='badge white-text red'>java.net.ConnectException: Connection refused: connect</span>
+          {
+    "id": 836,
+    "firstname": "gertha",
+    "lastname": "kassulke",
+    "email": "Rubens@gmail.com",
+    "favfoods": {
+        "breakFast": "Idly",
+        "lunch": "Briyani",
+        "dinner": [
+            "pulka",
+            "milk"
+        ]
+    },
+    "jobs": [
+        "manual qa",
+        "automation tester"
+    ],
+    "marks": [
+        {
+            "tamil": 47,
+            "english": 54
+        },
+        {
+            "tamil": 69,
+            "english": 85
+        }
+    ]
+}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>00:40:02</td>
+        <td>
+          getSingleEmployeeDetail is PASSED
         </td>
       </tr>
   </tbody>
@@ -2659,30 +3067,460 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">10</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">getcall</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>getcall</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Assignment</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Assignment</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>assignmentTestCall</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">regression</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>regression</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postNewEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>getEmployeeDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">getcall</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>getcall</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>getEmployeeDetails</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">Muralikrishnan</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Muralikrishnan</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>getEmployeeDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Muralikrishnan</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Muralikrishnan</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Muralikrishnan</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Muralikrishnan</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>assignmentTestCall</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">smoke</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>smoke</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postNewEmployee</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>getEmployeeDetails</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:40:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>getSingleEmployeeDetail</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">postcall</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>postcall</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postNewEmployee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Muralikrishnan</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Muralikrishnan</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:39:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>postNewEmployee</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 19, 2022 10:51:51 PM</h3>
+<h3>Apr 21, 2022 12:39:57 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 19, 2022 10:52:09 PM</h3>
+<h3>Apr 21, 2022 12:40:02 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>6</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -2698,12 +3536,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>3</b> tests passed
+<div><small data-tooltip='100%'>
+<b>6</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>3</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -2721,10 +3559,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>6</b> events passed</small></div>
+<div><small data-tooltip='64%'><b>11</b> events passed</small></div>
 <div>
-<small data-tooltip='33%'><b>3</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>6</b> others
 </small>
 </div>
 </div>
@@ -2740,17 +3578,107 @@
 </div></div>
 <script>
 var timeline = {
-"getEmployeeDetails":4.838,"postNewEmployee":5.409,"postNewEmployeeUsingExternalFile":4.076,"getSingleEmployeeDetail":4.289,"getSingleEmployeeDetail":4.123,"getSingleEmployeeDetail":4.113
+"postNewEmployee":4.765,"getSingleEmployeeDetail":4.991,"getEmployeeDetails":4.111,"assignmentTestCall":4.405,"getSingleEmployeeDetail":0.058,"getSingleEmployeeDetail":0.063
 };
 </script>
 <div class="row">
+<div class="col-md-4 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>getcall</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Assignment</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>regression</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>getcall</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Muralikrishnan</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Muralikrishnan</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Muralikrishnan</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>smoke</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>postcall</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Muralikrishnan</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 </div>
 </div>
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 3,
+passParent: 6,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -2766,11 +3694,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 6,
-failEvents: 3,
+passEvents: 11,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 6
 };
 </script>        </div>
       </div>

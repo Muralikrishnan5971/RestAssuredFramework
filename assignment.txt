@@ -1,0 +1,14 @@
+
+#rest assured assignment
+
+1. make a call to the locanhost:3000
+2. get the size of the array
+3. store the size in some variable
+4. make a post call using pojo 
+5. verify post call is successful
+6. perform schema validation
+7. make the get call again and check wether size = size + 1
+8. make put call to  update firstname field
+9. store the response in the external file
+10. make the delete call and delete the entry we made
+11. make a get call and check size

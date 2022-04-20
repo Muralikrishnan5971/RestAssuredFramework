@@ -4,29 +4,11 @@
   <listeners>
     <listener class-name="com.mk.Listeners.TestListener"/>
   </listeners>
-  <test thread-count="3" name="Test" parallel="methods">
+  <test thread-count="6" name="Test" parallel="methods">
     <classes>
       <class name="com.mk.tests.PostTest"/>
       <class name="com.mk.tests.GetTests"/>
+      <class name="com.mk.tests.AssignmentTest"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)" parallel="methods">
-    <classes>
-      <class name="com.mk.tests.PostTest">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="tearDownSuite"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethodITest"/>
-        </methods>
-      </class> <!-- com.mk.tests.PostTest -->
-      <class name="com.mk.tests.GetTests">
-        <methods>
-          <include name="getSingleEmployeeDetail" invocation-numbers="0 1 2"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethodITest"/>
-        </methods>
-      </class> <!-- com.mk.tests.GetTests -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MyTestSuite] -->

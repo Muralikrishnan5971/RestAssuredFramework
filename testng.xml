@@ -8,10 +8,11 @@
 	</listeners>
 
 
-	<test name="Test" parallel="methods" thread-count="3">
+	<test name="Test" parallel="methods" thread-count="6">
 		<classes>
 			<class name="com.mk.tests.PostTest" />
 			<class name="com.mk.tests.GetTests" />
+			<class name="com.mk.tests.AssignmentTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- MyTestSuite -->

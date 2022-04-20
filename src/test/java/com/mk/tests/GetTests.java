@@ -18,7 +18,7 @@ import io.restassured.response.Response;
 public class GetTests extends BaseTest {
 
 	@Test(enabled = true)
-	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke"})
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "getcall"})
 	public void getEmployeeDetails() {
 
 		Response response = RequestBuilder.buildGetRequest().get("/employees");
@@ -37,6 +37,7 @@ public class GetTests extends BaseTest {
 	}
 
 	@Test(enabled = true, dataProvider = "getRequestDataProvider")
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "getcall"})
 	public void getSingleEmployeeDetail(Map<String, String> data) {
 
 		Response response = RequestBuilder.buildGetRequest().pathParam("id", data.get("id")).get("/employees/{id}");
@@ -74,6 +75,7 @@ public class GetTests extends BaseTest {
 	}
 	
 	@Test(enabled = false)
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "getcall"})
 	public void getEmployeeTest(){
 		
 		Response response = RequestBuilder.buildGetRequest().get("/employees");

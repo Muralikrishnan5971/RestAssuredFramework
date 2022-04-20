@@ -7,6 +7,7 @@ import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import com.mk.Annotations.FrameworkAnnotations;
 import com.mk.ApiRequestBuilder.RequestBuilder;
 import com.mk.Constants.FCwithSingleton;
 import com.mk.Constants.FrameworkConstants;
@@ -19,10 +20,12 @@ import com.mk.RequestUtils.RandomUtils;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class PostTest extends BaseTest {
 
 	@Test(enabled = true)
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "postcall"})
 	public void postNewEmployee() {
 
 		// Create a new employee in db using a post call
@@ -55,7 +58,13 @@ public class PostTest extends BaseTest {
 
 		// ACTION
 
-		Response response = RequestBuilder.buildPostRequest().body(employee).post("/employees");
+		RequestSpecification responseSpecification = RequestBuilder.buildPostRequest().body(employee);
+				
+		// To log the response to our report
+		
+		ExtentLogger.logRequest(responseSpecification);
+		
+		Response response = responseSpecification.post("/employees");
 
 		response.prettyPrint();
 
@@ -73,7 +82,8 @@ public class PostTest extends BaseTest {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "postcall"})
 	public void postNewEmployeeUsingExternalFile(Method method) {
 
 		// reading the request body from an external json file
@@ -98,6 +108,7 @@ public class PostTest extends BaseTest {
 	// reading the framework constants from the Singleton class
 
 	@Test(enabled = false)
+	@FrameworkAnnotations(author = "Muralikrishnan", category = {"regression", "smoke", "postcall"})
 	public void postNewEmployeeUsingExternalFileSingleton(Method method) {
 
 		// reading the request body from an external json file
