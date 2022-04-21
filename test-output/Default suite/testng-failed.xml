@@ -3,20 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.mk.tests.PostTest"/>
+      <class name="com.mk.tests.AuthorizationTest"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="com.mk.tests.PostTest">
-        <methods>
-          <include name="setUpSuite"/>
-          <include name="tearDownSuite"/>
-          <include name="postNewEmployee"/>
-          <include name="setUpMethod"/>
-          <include name="tearDownMethodITest"/>
-        </methods>
-      </class> <!-- com.mk.tests.PostTest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

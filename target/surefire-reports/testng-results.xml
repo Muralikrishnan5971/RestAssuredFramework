@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="11" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MyTestSuite" duration-ms="5776" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:25 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5776" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:25 IST">
+      <class name="com.mk.tests.AssignmentTest">
+        <test-method status="PASS" signature="assignmentTestCall()[pri:0, instance:com.mk.tests.AssignmentTest@33c7e1bb]" name="assignmentTestCall" duration-ms="4935" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignmentTestCall -->
+      </class> <!-- com.mk.tests.AssignmentTest -->
+      <class name="com.mk.tests.GetTests">
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="setUpMethod" is-config="true" duration-ms="2" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.GetTests.getEmployeeDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="setUpMethod" is-config="true" duration-ms="4" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.GetTests.getSingleEmployeeDetail(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="getEmployeeDetails()[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="getEmployeeDetails" duration-ms="4484" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeDetails -->
+        <test-method status="PASS" signature="getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="getSingleEmployeeDetail" duration-ms="5599" started-at="2022-04-21T17:47:20 IST" data-provider="getRequestDataProvider" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=bambi, id=242}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleEmployeeDetail -->
+        <test-method status="PASS" signature="tearDownMethodITest(org.testng.ITestResult)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="tearDownMethodITest" is-config="true" duration-ms="1" started-at="2022-04-21T17:47:24 IST" finished-at="2022-04-21T17:47:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getEmployeeDetails status=SUCCESS method=GetTests.getEmployeeDetails()[pri:0, instance:com.mk.tests.GetTests@30a3107a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethodITest -->
+        <test-method status="PASS" signature="tearDownMethodITest(org.testng.ITestResult)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="tearDownMethodITest" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSingleEmployeeDetail status=SUCCESS method=GetTests.getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethodITest -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.GetTests.getSingleEmployeeDetail(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="getSingleEmployeeDetail" duration-ms="57" started-at="2022-04-21T17:47:25 IST" data-provider="getRequestDataProvider" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=miki, id=751}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleEmployeeDetail -->
+        <test-method status="PASS" signature="tearDownMethodITest(org.testng.ITestResult)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="tearDownMethodITest" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSingleEmployeeDetail status=SUCCESS method=GetTests.getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethodITest -->
+        <test-method status="PASS" signature="getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="getSingleEmployeeDetail" duration-ms="62" started-at="2022-04-21T17:47:25 IST" data-provider="getRequestDataProvider" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=gertha, id=836}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleEmployeeDetail -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="setUpMethod" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.GetTests.getSingleEmployeeDetail(java.util.Map)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="tearDownMethodITest(org.testng.ITestResult)[pri:0, instance:com.mk.tests.GetTests@30a3107a]" name="tearDownMethodITest" is-config="true" duration-ms="1" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getSingleEmployeeDetail status=SUCCESS method=GetTests.getSingleEmployeeDetail(java.util.Map)[pri:0, instance:com.mk.tests.GetTests@30a3107a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethodITest -->
+      </class> <!-- com.mk.tests.GetTests -->
+      <class name="com.mk.tests.PostTest">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.mk.tests.PostTest@34cd072c]" name="setUpSuite" is-config="true" duration-ms="10" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method status="PASS" signature="setUpMethod(java.lang.reflect.Method)[pri:0, instance:com.mk.tests.PostTest@34cd072c]" name="setUpMethod" is-config="true" duration-ms="1" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.mk.tests.PostTest.postNewEmployee()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method status="PASS" signature="postNewEmployee()[pri:0, instance:com.mk.tests.PostTest@34cd072c]" name="postNewEmployee" duration-ms="5510" started-at="2022-04-21T17:47:20 IST" finished-at="2022-04-21T17:47:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postNewEmployee -->
+        <test-method status="PASS" signature="tearDownMethodITest(org.testng.ITestResult)[pri:0, instance:com.mk.tests.PostTest@34cd072c]" name="tearDownMethodITest" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=postNewEmployee status=SUCCESS method=PostTest.postNewEmployee()[pri:0, instance:com.mk.tests.PostTest@34cd072c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethodITest -->
+        <test-method status="PASS" signature="tearDownSuite()[pri:0, instance:com.mk.tests.PostTest@34cd072c]" name="tearDownSuite" is-config="true" duration-ms="0" started-at="2022-04-21T17:47:25 IST" finished-at="2022-04-21T17:47:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.mk.tests.PostTest -->
+    </test> <!-- Test -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>
