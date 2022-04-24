@@ -35,7 +35,7 @@ public class AuthorizationTest {
 		response.prettyPrint();
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void getMyGitHubRepos() {
 		
 		Response response = given()

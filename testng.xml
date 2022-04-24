@@ -8,7 +8,7 @@
 	</listeners>
 
 
-	<test name="Test" parallel="methods" thread-count="6">
+	<test name="Test" >
 		<classes>
 			<class name="com.mk.tests.PostTest" />
 			<class name="com.mk.tests.GetTests" />

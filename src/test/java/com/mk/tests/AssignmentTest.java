@@ -17,7 +17,7 @@ import io.restassured.specification.RequestSpecification;
 public class AssignmentTest {
 
 
-	@Test
+	@Test(enabled = true)
 	@FrameworkAnnotations(author = "Muralikrishnan", category = "Assignment")
 	public void assignmentTestCall() {
 		

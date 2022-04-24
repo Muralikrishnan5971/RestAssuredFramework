@@ -1,4 +1,5 @@
 com\mk\tests\AssignmentTest.class
+com\mk\tests\AuthorizationTest.class
 com\mk\tests\BaseTest.class
 com\mk\tests\GetTests.class
 com\mk\tests\PostTest.class

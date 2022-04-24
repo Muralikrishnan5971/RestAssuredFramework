@@ -25,7 +25,7 @@ public class GetTests extends BaseTest {
 
 		response.prettyPrint();
 		
-		ExtentLogger.pass(response.prettyPrint());
+//		ExtentLogger.pass(response.prettyPrint());
 		
 		assertThat(response.getStatusCode()).isEqualTo(200);
 
@@ -44,7 +44,7 @@ public class GetTests extends BaseTest {
 
 		response.prettyPrint();
 		
-		ExtentLogger.pass(response.prettyPrint());
+//		ExtentLogger.pass(response.prettyPrint());
 
 		assertThat(response.jsonPath().getString("firstname")).isEqualTo(data.get("firstname").toLowerCase());
 	}
