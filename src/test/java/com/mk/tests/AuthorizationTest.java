@@ -23,7 +23,7 @@ public class AuthorizationTest {
 		response.prettyPrint();
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void getAllWorkspaceInPostman(){
 		
 		Response response = given()
@@ -34,4 +34,21 @@ public class AuthorizationTest {
 		
 		response.prettyPrint();
 	}
+	
+	@Test
+	public void getMyGitHubRepos() {
+		
+		Response response = given()
+				.header("Authorization", "Bearer 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")
+				.queryParam("affiliation", "owner")
+				.log()
+				.all()
+				.get("https://api.github.com/user/repos");
+		
+		response.prettyPrint();
+	}
+	
+	
+	
+	
 }

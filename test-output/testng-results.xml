@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5739" started-at="2022-04-21T18:04:59Z" finished-at="2022-04-21T18:05:04Z">
+  <suite name="Default suite" duration-ms="4554" started-at="2022-04-24T05:42:12Z" finished-at="2022-04-24T05:42:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5739" started-at="2022-04-21T18:04:59Z" finished-at="2022-04-21T18:05:04Z">
+    <test name="Default test" duration-ms="4554" started-at="2022-04-24T05:42:12Z" finished-at="2022-04-24T05:42:16Z">
       <class name="com.mk.tests.AuthorizationTest">
-        <test-method status="PASS" signature="getAllWorkspaceInPostman()[pri:0, instance:com.mk.tests.AuthorizationTest@129a8472]" name="getAllWorkspaceInPostman" duration-ms="5721" started-at="2022-04-21T23:34:59Z" finished-at="2022-04-21T23:35:04Z">
+        <test-method status="PASS" signature="getMyGitHubRepos()[pri:0, instance:com.mk.tests.AuthorizationTest@129a8472]" name="getMyGitHubRepos" duration-ms="4536" started-at="2022-04-24T11:12:12Z" finished-at="2022-04-24T11:12:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAllWorkspaceInPostman -->
+        </test-method> <!-- getMyGitHubRepos -->
       </class> <!-- com.mk.tests.AuthorizationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
